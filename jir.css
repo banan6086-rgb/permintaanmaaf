@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+.background {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1350&q=80') center/cover no-repeat fixed;
+  filter: brightness(0.4) blur(3px);
+  z-index: -1;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  padding: 40px 30px;
+  max-width: 450px;
+  border-radius: 20px;
+  box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.1);
+  text-align: center;
+}
+
+.card h1 {
+  font-weight: 600;
+  margin-bottom: 25px;
+  font-size: 2.2rem;
+  color: #ffd6d6;
+  text-shadow: 0 0 10px #ff6f91;
+}
+
+.card p {
+  font-weight: 300;
+  line-height: 1.6;
+  font-size: 1rem;
+  margin-bottom: 35px;
+  color: #fff;
+}
+
+.btn-wa {
+  display: inline-block;
+  padding: 15px 30px;
+  background: #25D366;
+  color: white;
+  font-weight: 600;
+  border-radius: 50px;
+  box-shadow: 0 5px 15px rgba(37, 211, 102, 0.5);
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.btn-wa:hover {
+  background-color: #1ebe57;
+  box-shadow: 0 8px 20px rgba(30, 200, 80, 0.7);
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .card {
+    padding: 30px 20px;
+    max-width: 90vw;
+  }
+  .card h1 {
+    font-size: 1.8rem;
+  }
+  .btn-wa {
+    font-size: 0.9rem;
+    padding: 12px 25px;
+  }
+}
